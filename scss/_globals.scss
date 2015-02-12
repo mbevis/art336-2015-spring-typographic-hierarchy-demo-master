@@ -26,5 +26,9 @@ font-family: 'Open Sans Condensed', helvetica, verdana, sans-serif;
 
 $background-color: #fff;
 $color: #262626;
-$font-size: 22px;
+$base-font-size: 22px;
 $line-height: 1.45;
+
+@function em($px, $base: $base-font-size) { 
+    @return ($px / $base) * 1em; 
+}
